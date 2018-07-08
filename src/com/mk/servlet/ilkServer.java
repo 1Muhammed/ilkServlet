@@ -1,6 +1,8 @@
 package com.mk.servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,6 +19,19 @@ public class ilkServer extends HttpServlet {
         super();
 
     }
+public void kaydet (HttpServletRequest request, HttpServletResponse response) 
+	
+	 throws ServletException, IOException {
+		 
+		 response.setContentType("text/htmlUTF-8");
+		 
+		 try (PrintWriter prt = response.getWriter()) {
+		 
+			 
+		 }
+	 }
+	
+	
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
